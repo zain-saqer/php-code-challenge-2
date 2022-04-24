@@ -63,6 +63,6 @@ class GetAverageScoreOfHotelTest extends TestCase
 
         self::assertSame(1.0, $response->averageScore);
         self::assertSame(2, $response->count);
-        self::assertEquals([1.0], $response->averageScoreGroups);
+        self::assertEquals([1.0], $response->scores);
     }
 }

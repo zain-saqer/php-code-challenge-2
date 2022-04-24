@@ -28,6 +28,6 @@ class ReviewRepository implements ReviewRepositoryInterface
             ->setParameter('e', $endDate->format("Y-m-d"))
             ->orderBy('r.createdDate')
             ->getQuery()
-            ->getArrayResult();
+            ->getResult();
     }
 }

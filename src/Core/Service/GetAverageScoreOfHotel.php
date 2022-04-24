@@ -43,6 +43,7 @@ final class GetAverageScoreOfHotel implements GetAverageScoreOfHotelInterface
         return new AverageScoreResponse(
             count($reviews),
             $this->averageScore($reviews),
+            $groupBy->name,
             array_map(function (array $reviews) {
                 return $this->averageScore($reviews);
             }, $groupedReviews)
