@@ -13,7 +13,7 @@ doctrine:
             App:
                 is_bundle: false
                 dir: '%kernel.project_dir%/src/Core/Model'
-                prefix: 'App\Domain\Model'
+                prefix: 'App\Core\Model'
                 alias: App
 
 when@test:
