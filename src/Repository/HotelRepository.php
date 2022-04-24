@@ -9,7 +9,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class HotelRepository implements HotelRepositoryInterface
 {
-    public function __construct(private EntityManagerInterface $entityManager)
+    public function __construct(private readonly EntityManagerInterface $entityManager)
     {
     }
 
