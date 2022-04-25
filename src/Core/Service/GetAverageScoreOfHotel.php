@@ -28,7 +28,7 @@ final class GetAverageScoreOfHotel implements GetAverageScoreOfHotelInterface
 
         $reviews = $this->reviewRepository->findReviewsByDateRange($request->hotelId, $request->startDate, $request->endDate);
 
-        $rangeInDays = $request->endDate->diff($request->startDate)->d;
+        $rangeInDays = $request->endDate->diff($request->startDate)->format("%a");
 
         $groupBy = GroupingInterval::month;
 
